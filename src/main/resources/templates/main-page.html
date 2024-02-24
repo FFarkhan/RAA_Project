@@ -1,0 +1,103 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAA</title>
+    <style>
+        body{
+            background-color: #004256;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .wrapper{
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+
+        }
+        h2{
+            font-family: Georgia, serif;
+        }
+
+        p{
+            font-size: 18px;
+            font-family: Georgia, serif;
+        }
+
+        html, body{
+            height: 100%;
+        }
+
+        /*   HEADER   */
+
+        header{
+            text-align: center;
+            max-height: 50px;
+        }
+
+
+
+        /*   MAIN   */
+
+        main{
+            flex: 1 1 auto;
+        }
+
+        img{
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            max-height: 700px;
+            min-height: 200px;
+            margin-top: 30px;
+
+        }
+
+
+        /*   FOOTER   */
+        footer{
+            background-color: #121212;
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 100px;
+            align-items: center;
+            text-align: center;
+            max-height: 200px;
+            width: 100%;
+
+        }
+
+        .h2_info{
+            display: flex;
+            justify-content: flex-start;
+            color: white;
+        }
+        a{
+            color: aqua;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__side">
+            <h2>COMING SOON</h2>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__side">
+            <img th:src="@{https://mail.google.com/mail/u/0?ui=2&ik=2d3012f119&attid=0.1&permmsgid=msg-f:1791522840376976745&th=18dcc4880bab2569&view=att&disp=safe&realattid=18dcc479b1ce22827e03}">
+        </div>
+    </main>
+    <footer class="footer">
+        <form>
+            <p class="h2_info">Name : Velizade Shahin</p>
+            <p class="h2_info">Phone : +(994)517323334</p>
+            <p class="h2_info">Email : <a href="mailto:velizadeshahin@icloud.com">office@raa.az</a></p>
+        </form>
+    </footer>
+</div>
+</body>
+</html>
